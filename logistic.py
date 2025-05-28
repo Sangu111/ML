@@ -18,7 +18,7 @@ print("Data Split successful")
 from sklearn.linear_model import LogisticRegression
 model=LogisticRegression(max_iter=2000)
 model.fit(x_train,y_train)
-print("Data model successful")
+print("Model Trained Successfully")
 
 train_score=model.score(x_train,y_train)
 print("model accuracy is",train_score)
