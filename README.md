@@ -1,4 +1,4 @@
-# ML Algorithms Demo
+# ML Algorithms 
 
 This repository contains Python implementations of classic machine learning algorithms, each demonstrated with suitable datasets. The goal is to provide clear and practical examples for learning and experimentation.
 
