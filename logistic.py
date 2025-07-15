@@ -1,5 +1,5 @@
 import pandas as pd
-data=pd.read_csv("E:/ML LAB/iris.csv")
+data=pd.read_csv("dataset/iris.csv")
 print(data.head())
 print(data.isnull().sum())
 print(data.info())

@@ -1,5 +1,5 @@
 import pandas as pd
-data = pd.read_csv("E:/ML LAB/iris_naivebayes.csv")
+data = pd.read_csv("dataset/iris_naivebayes.csv")
 print(data.head())
 print(data.info())
 print(data.isnull().sum())

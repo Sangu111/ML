@@ -1,5 +1,5 @@
 import pandas as pd
-data = pd.read_csv("E:/ML LAB/Mall_Customers.csv")
+data = pd.read_csv("dataset/Mall_Customers.csv")
 print(data.head())
 
 X = data[['Annual Income (k$)','Spending Score (1-100)']]

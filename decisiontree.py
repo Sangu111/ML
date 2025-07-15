@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 
 # Load the dataset
-data = pd.read_csv("E:/ML LAB/PlayTennis.csv")
+data = pd.read_csv("dataset/PlayTennis.csv")
 print(data.head())
 print(data.info())
 print(data.isnull().sum())

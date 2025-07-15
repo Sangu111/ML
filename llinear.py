@@ -1,7 +1,7 @@
 import pandas as pd
 from matplotlib.pyplot import scatter
 
-data=pd.read_csv ("E:\ML LAB\clean_study_hours_vs_marks.csv")
+data=pd.read_csv ("dataset/clean_study_hours_vs_marks.csv")
 print(data.head(10))
 X=data[["StudyHours"]]
 Y=data["Marks"]

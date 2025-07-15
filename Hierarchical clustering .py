@@ -1,7 +1,7 @@
 import pandas as pd
 from matplotlib.pyplot import title
 
-data = pd.read_csv("E:/ML LAB/ecommerce_customers.csv")
+data = pd.read_csv("dataset/ecommerce_customers.csv")
 
 X = data.drop(columns=['CustomerID'])
 
