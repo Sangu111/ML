@@ -11,10 +11,12 @@ from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size= 0.2, train_size= 0.8,
                                                     random_state=58)
 print("Data split Successfully")
+
 from sklearn.naive_bayes import GaussianNB
 naive_bayes_model = GaussianNB()
 naive_bayes_model.fit(X_train, y_train)
 print("Model Trained Successfully")
+
 train_accuracy = naive_bayes_model.score (X_train,y_train)
 test_accuracy = naive_bayes_model.score(X_test,y_test)
 
