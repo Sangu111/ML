@@ -49,10 +49,12 @@ You will need Python 3.x and the following packages:
 - pandas
 - matplotlib
 - scikit-learn
+- seaborn
+- scipy
 
 To install the dependencies, run:
 ```bash
-pip install numpy pandas matplotlib scikit-learn
+pip install numpy pandas matplotlib scikit-learn seaborn scipy
 ```
 
 ### Running the Programs
@@ -65,27 +67,36 @@ cd ML
 
 Run any script using Python:
 ```bash
-python linear.py
-python logisitc.py
-python "decision tree.py"
+python llinear.py
+python logistic.py
+python decisiontree.py
 python "Naive Bayes algorithm.py"
 python "k-Nearest Neighbor algorithm.py"
 python "k-Means algorithm.py"
 python "Hierarchical clustering .py"
 ```
-*(You may also see alternative file names in the repo, such as `llinear.py`, `logistic.py`, `decisiontree.py`; use the actual file name as present in your directory.)*
+
+### Dataset Organization
+
+All datasets are organized in the `dataset/` folder:
+- `iris.csv` - Iris flower dataset
+- `iris_naivebayes.csv` - Iris dataset for Naive Bayes
+- `PlayTennis.csv` - Tennis playing decision dataset
+- `clean_study_hours_vs_marks.csv` - Study hours vs marks dataset
+- `Mall_Customers.csv` - Customer segmentation dataset
+- `ecommerce_customers.csv` - E-commerce customer dataset
 
 ---
 
 ## File Descriptions
 
-- **linear.py / llinear.py**: Demonstrates linear regression, including data loading, training, prediction, and visualization.
-- **logisitc.py / logistic.py**: Demonstrates logistic regression for binary classification, including model training and evaluation.
-- **decision tree.py / decisiontree.py**: Implements the ID3 algorithm for decision trees. Builds the tree from data and classifies new samples.
-- **Naive Bayes algorithm.py**: Uses the Naive Bayes algorithm on the Iris dataset and displays both correct and incorrect predictions.
-- **k-Nearest Neighbor algorithm.py**: Uses the k-NN algorithm on the Iris dataset, showing both correct and incorrect predictions.
-- **k-Means algorithm.py**: Implements the k-Means clustering algorithm, groups data points, and visualizes the clusters.
-- **Hierarchical clustering .py**: Demonstrates hierarchical clustering, including dendrogram construction and forming clusters.
+- **llinear.py**: Demonstrates linear regression, including data loading, training, prediction, and visualization using the `clean_study_hours_vs_marks.csv` dataset.
+- **logistic.py**: Demonstrates logistic regression for binary classification, including model training and evaluation using the `iris.csv` dataset.
+- **decisiontree.py**: Implements the ID3 algorithm for decision trees. Builds the tree from the `PlayTennis.csv` dataset and classifies new samples.
+- **Naive Bayes algorithm.py**: Uses the Naive Bayes algorithm on the `iris_naivebayes.csv` dataset and displays both correct and incorrect predictions.
+- **k-Nearest Neighbor algorithm.py**: Uses the k-NN algorithm on the `iris_naivebayes.csv` dataset, showing both correct and incorrect predictions.
+- **k-Means algorithm.py**: Implements the k-Means clustering algorithm using the `Mall_Customers.csv` dataset, groups data points, and visualizes the clusters.
+- **Hierarchical clustering .py**: Demonstrates hierarchical clustering using the `ecommerce_customers.csv` dataset, including dendrogram construction and forming clusters.
 
 ---
 
